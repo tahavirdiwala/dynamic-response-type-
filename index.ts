@@ -17,5 +17,6 @@ const d = selfResolved({
 });
 
 d.then((resp) => {
+  // all keys are infer dynamically
   console.log(resp.description.nestedKey.nestedKey2.nested3.hello);
 });
